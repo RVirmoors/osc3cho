@@ -1,0 +1,21 @@
+{
+  "name": "oscecho",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.17.1",
+    "osc-js": "^2.1.0",
+    "socket.io": "^2.1.0",
+    "socket.io-client": "^2.3.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "description": "get OSC (or other) messages and send them to any client who'll listen.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RVirmoors/osc3cho.git"
+  },
+  "author": "",
+  "license": "GPLv3"
+}
