@@ -9,3 +9,6 @@ edit the line in public/index.html :
 you can uncomment the localhost URL to try it out locally, or use your own URL (e.g. if you deploy on [Heroku](https://www.heroku.com/) or [Google Cloud](https://cloud.google.com))
 
 use the patches in max/ to test sending & receiving. Obviously a similar setup should work with other Node clients.
+
+
+![](https://rvirmoors.github.io/ccia/attachments/node-osc.gif)
