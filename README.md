@@ -1,14 +1,25 @@
 # osc3cho
 echo OSC (or other) messages to all connected clients
 
-### usage
+## try locally
 
-edit the line in public/index.html : 
+edit the line in public/index.html: (uncomment localhost)
 `const socket = io.connect('https://your.URL.here.com/') // ('localhost:5000');`
 
-you can uncomment the localhost URL to try it out locally, or use your own URL (e.g. if you deploy on [Heroku](https://www.heroku.com/) or [Google Cloud](https://cloud.google.com))
+then run:
+```
+  npm install
+  node server.js
+```
 
-use the patches in max/ to test sending & receiving. Obviously a similar setup should work with other Node clients.
+access localhost:5000 in your browser and run the Max patches.
 
+## run online
+
+deploy e.g. on [Heroku](https://www.heroku.com/) or [Google Cloud](https://cloud.google.com)
+
+edit the line in public/index.html with your online, live URL
+
+again, use the patches in max/ to test sending & receiving. Obviously a similar setup should work with other Node clients.
 
 ![](https://rvirmoors.github.io/ccia/attachments/node-osc.gif)
