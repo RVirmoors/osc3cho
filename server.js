@@ -9,19 +9,11 @@ var app = express();
 var server = require('http').Server(app);
 server.listen(PORT);
 
-// This call back just tells us that the server has started
-/*function listen() {
-  var host = server.address().address;
-  var port = server.address().port;
-  console.log('Example app listening at http://' + host + ':' + port);
-}
-*/
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/index.html');
 });
 
-// WebSocket Portion
-// WebSockets work with the HTTP server
+// Using socket.io for comms
 var io = require('socket.io')(server);
 
 // Register a callback function to run when we have an individual connection

@@ -1,4 +1,3 @@
-//<script src="/socket.io/socket.io.js"></script>
 const maxApi = require('max-api');
 const io = require('socket.io-client');
 
@@ -17,7 +16,6 @@ maxApi.addHandler('disconnect', () => {
 })
 
 maxApi.addHandler('send', (arg1) => {
-//	maxApi.post(`Got ${arg1} ${arg2}`);
 	var sendData = {
 	    x: arg1,
 	};
